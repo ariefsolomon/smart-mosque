@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Masjid Al Barokah</title>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body class="bg-gray-50">
+		<!-- Navbar -->
+		<nav class="navbar">
+			<div class="container mx-auto px-4">
+				<div class="flex justify-between items-center h-16">
+					<div class="text-xl font-bold">Masjid Al Barokah</div>
+					<div class="hidden md:flex space-x-4 nav-links">
+						<a href="#home">Beranda</a>
+						<a href="#agenda">Agenda</a>
+						<a href="#calendar">Kalender Hijriah</a>
+						<a href="#journal">Jurnal Kegiatan</a>
+						<a href="#profile">Profil</a>
+					</div>
+					<button class="mobile-menu-btn md:hidden">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section id="home" class="hero-section">
+			<div class="container mx-auto px-4 text-center">
+				<h1 class="text-4xl font-bold mb-4">
+					Selamat Datang di Masjid Al Barokah
+				</h1>
+				<p class="text-xl mb-8">Cibubur Villa 2, Cimanggis, Depok</p>
+				<div class="prayer-times">
+					<h2 class="text-2xl font-bold mb-2">
+						Jadwal Sholat Hari Ini
+					</h2>
+					<div class="prayer-grid">
+						<div>Subuh: <span id="subuh-time">04:30</span></div>
+						<div>Dzuhur: <span id="dzuhur-time">12:00</span></div>
+						<div>Ashar: <span id="ashar-time">15:15</span></div>
+						<div>Maghrib: <span id="maghrib-time">18:00</span></div>
+						<div>Isya: <span id="isya-time">19:15</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Agenda Section -->
+		<section id="agenda" class="agenda-section">
+			<div class="container mx-auto px-4">
+				<h2 class="section-title">Agenda Kegiatan</h2>
+				<div class="agenda-grid">
+					<!-- Agenda items will be populated by JavaScript -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Islamic Calendar -->
+		<section id="calendar" class="calendar-section">
+			<div class="container mx-auto px-4">
+				<h2 class="section-title">Kalender Hijriah</h2>
+				<div class="calendar-container">
+					<div class="text-center mb-4">
+						<h3 id="current-month" class="text-xl font-bold"></h3>
+					</div>
+					<div id="calendar-grid" class="calendar-grid">
+						<!-- Calendar will be populated by JavaScript -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Journal Section -->
+		<section id="journal" class="journal-section">
+			<div class="container mx-auto px-4">
+				<h2 class="section-title">Jurnal Kegiatan</h2>
+				<div id="journal-entries" class="journal-container">
+					<!-- Journal entries will be populated by JavaScript -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Profile Section -->
+		<section id="profile" class="profile-section">
+			<div class="container mx-auto px-4">
+				<h2 class="section-title">Profil Masjid</h2>
+				<div class="profile-container">
+					<img
+						src="/api/placeholder/800/400"
+						alt="Masjid Al Barokah"
+						class="profile-image"
+					/>
+					<h3 class="profile-subtitle">Sejarah Masjid Al Barokah</h3>
+					<p class="profile-text">
+						Masjid Al Barokah didirikan pada tahun 1980 dan telah
+						menjadi pusat kegiatan Islam di wilayah ini.
+					</p>
+					<h3 class="profile-subtitle">Fasilitas</h3>
+					<ul class="facilities-list">
+						<li>Ruang sholat utama kapasitas 500 jamaah</li>
+						<li>Tempat wudhu terpisah pria dan wanita</li>
+						<li>Perpustakaan Islam</li>
+						<li>Ruang serba guna</li>
+						<li>Area parkir luas</li>
+					</ul>
+					<h3 class="profile-subtitle">Kontak</h3>
+					<div class="contact-info">
+						<p>Alamat: Jl. Masjid No. 123, Kota</p>
+						<p>Telepon: (021) 1234-5678</p>
+						<p>Email: info@masjidalbarokah.or.id</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="site-footer">
+			<div class="container mx-auto px-4 text-center">
+				<p class="mb-2">
+					© 2025 Masjid Al Barokah. Hak Cipta Dilindungi.
+				</p>
+				<div class="social-links">
+					<a href="#">Facebook</a>
+					<a href="#">Instagram</a>
+					<a href="#">YouTube</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
